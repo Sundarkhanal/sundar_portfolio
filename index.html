@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+</head>
+<body>
+    
+
+<link rel="stylesheet" href="style.css">
+<script src="https://kit.fontawesome.com/0fa12b6ecd.js" crossorigin="anonymous"></script>
+<head>
+
+
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="LOGO-removebg-preview.png" class="logo">
+                <ul id="sidemenu" style="right: -200px;">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-xmark" onclick="closemenu()" aria-hidden="true"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()" aria-hidden="true"></i>
+            </nav>
+            <div class="header-text">
+                <p>Designer&amp;Developer</p>
+                <h1>Hi, I'm <span>Sundar</span><br> Khanal From NEPAL</h1>
+            </div>
+        </div>
+    </div>
+    <!-- ----------about------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="sundar.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Hello <br> I am Sundar Khanal.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links" onclick="opentab('Skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links active-link" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents" id="Skills">
+                        <ul>
+                            <li><span>UI?UX</span><br>Designing Web/App interfaces </li>
+                            <li><span>Web Development</span><br>Develop/Maintain Websites </li>
+                            <li><span>Graphic Designing</span><br>Creating Visual Concepts using different software like
+                                Adobe Photoshop, Adobe premire pro, Canva</li>
+                        </ul>
+
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>HTML/ CSS</span><br>Done some projects in HTML &amp; CSS</li>
+                            <li><span>C/C++</span><br>Done some projects in C &amp; C++</li>
+                            <li><span>JAVA/Python</span><br>Basic Knowledge of Java <br> and currently studying Python
+                                form Coursera</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="education">
+                        <ul>
+                            <li><span>Class 12</span><br>Studying Computer Engineering <br>(Sub-diploma Course) </li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ------------------services-------------- -->
+        <div id="services">
+            <div class="container">
+                <h1 class="sub-title">My Services</h1>
+                <div class="services-list">
+                    <div>
+                        <i class="fa-solid fa-code"></i>
+                        <h2>Web Design</h2>
+                        <p>If you need a customized ecommerce website for your business, feel free to discuss with me
+                        </p>
+                        <a href="https://www.interaction-design.org/literature/topics/web-design">Learn More</a>
+                    </div>
+                    <div>
+                        <i class="fa-brands fa-figma"></i>
+                        <h2>UI?UX Design</h2>
+                        <p>If you need a design for your Web/App interfaces,feel free to discuss with me.</p>
+                        <a href="https://flatironschool.com/blog/what-is-ux-ui-design/">Learn More</a>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-computer"></i>
+                        <h2>Graphic Design</h2>
+                        <p>If you need for any graphic design related work,feel free to discuss with me.</p>
+                        <a href="https://en.wikipedia.org/wiki/Graphic_design">Learn More</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- ----------------portfolio----------- -->
+        <div id="portfolio">
+            <div class="container">
+                <h1 class="sub-title">My work</h1>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="1st page.png">
+                        <div class="layer">
+                            <h2>Hoome page</h2>
+                            <p></p>
+                            <h3>This is Food Ordering App where you can order your food online </h3>
+                            <p></p>
+                            <a href="http://127.0.0.1:5500/index.html#"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="2nd page.png">
+                        <div class="layer">
+                            <h4>Food Ordering App</h4>
+                            <p> </p>
+                            <h3>This is Food Ordering App where you can order your food online</h3>
+                            <p></p>
+                            <a href="http://127.0.0.1:5500/index.html#"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <a href="http://127.0.0.1:5500/index.html#" class="btn">See More</a>
+            </div>
+        </div>
+        <!-- ----------------- contact-------------- -->
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contact Me</h1>
+                        <p><i class="fa-solid fa-envelope"></i>sundarkhanal62@gmail.com</p>
+                        <p><i class="fa-solid fa-phone"></i>9861007396</p>
+                        <div class="social-icons">
+                            <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="https://l.facebook.com/l.php?u=https%3A%2F%2Finstagram.com%2Fsundar.khanal_11%3Figshid%3DZDdkNTZiNTM%253D%26fbclid%3DIwAR2tbH293rTgwlvmnPgTSy95tnkq_DQz_gfU0K4UecQWxFQYdylEKywMgeo&amp;h=AT0-dno1rdclPn5eVH7UlccNcCmwSYH6zvjP4V05_KhriEPkEdkQOmuRT3XxjhRsjL542VGRp1T34CwxftRzRFJKF6hsGDsVJ6yysdZne5BadN8xoBqPsLykCiUILsJLlfepFQ"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="https://www.linkedin.com/feed/"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="https://t.me/sundar11111"><i class="fa-brands fa-telegram"></i></a>
+                            <a href="https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.snapchat.com%2Fadd%2Fsundarkhanal_22%3Fshare_id%3DMqLkXI3pMSY%26locale%3Den-GB%26fbclid%3DIwAR2mVXQ4fFFLq7HTYsyADfX1gbNSuwcKRqbQDydDJ_KJNwYub2STfxR8RRs&amp;h=AT0-dno1rdclPn5eVH7UlccNcCmwSYH6zvjP4V05_KhriEPkEdkQOmuRT3XxjhRsjL542VGRp1T34CwxftRzRFJKF6hsGDsVJ6yysdZne5BadN8xoBqPsLykCiUILsJLlfepFQ"><i class="fa-brands fa-snapchat"></i></a>
+                        </div>
+                        <a href="https://sundarkhanal.github.io/sundar_portfolio/images/CV.pdf" download="" class="btn btn2">Download CV</a>
+                    </div>
+
+                    <div class="contact-right">
+                        <form name="submit-to-google-sheet">
+                            <input type="text" name="Name" placeholder="Your Name" required="" fdprocessedid="txhck9">
+                            <input type="email" name="Email" placeholder="Your Email" required="" fdprocessedid="dtcw5g">
+                            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                            <button type="submit" class="btn btn2" fdprocessedid="3nt9cg">Submit</button>
+                        </form>
+                        <span id="msg"></span>
+                    </div>
+                </div>
+            
+           
+
+        <script>
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents = document.getElementsByClassName("tab-contents");
+
+            function opentab(tabname) {
+                for (tablink of tablinks) {
+                    tablink.classList.remove("active-link");
+                }
+                for (tabcontent of tabcontents) {
+                    tabcontent.classList.remove("active-tab");
+                }
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab")
+            }
+        </script>
+        <script>
+            var sidemenu = document.getElementById("sidemenu");
+
+            function openmenu() {
+                sidemenu.style.right = "0";
+            }
+
+            function closemenu() {
+                sidemenu.style.right = "-200px";
+            }
+
+        </script>
+         <!-- <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbxuBfqaWrOxXGVpDkKymRNU0xtskJIol4SHetzjdnqwGaRNoTnns3cHp_ojB8V6RX3V9w/exec'
+            const form = document.forms['submit-to-google-sheet']
+
+            const msg = document.getElementById("msg")
+            form.addEventListener('submit', e => {
+                e.preventDefault()
+                fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                    .then(response => {
+                        msg.innerHTML = "Message sent successfully"
+                        setTimeout(function () {
+                            msg.innerHTML = ""
+                        }, 5000)
+                        form.reset()
+                    })
+                    .catch(error => console.error('Error!', error.message))
+            })
+        </script>  -->
+        <div class="copyright">
+            <p>Copyright © 2023 All rights reserved !!!! Sundar Khanal</p>
+        </div>
+    </head>
+</body>
+</html>
